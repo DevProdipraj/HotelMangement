@@ -149,6 +149,7 @@ nav{
     display: flex;
     align-items: center;
     padding: 3rem 0rem;
+    flex-wrap: wrap;
 }
 .our-services a{
     margin-right: 2rem;
@@ -645,11 +646,8 @@ nav{
     .hambarger #bar3{
         transform: translateY(-2px) rotate(-45deg);
     }
-    .our-services {
-        flex-wrap: wrap;
-    }
     .our_services_card{
-        width: 50%;
+        width: 100%;
         margin-top: 20px;
     }
     .master_room_body {
@@ -667,4 +665,95 @@ nav{
         padding-bottom: 3.5rem;
         text-align: center;
     }
+    .our-services a {
+        margin-right: 0rem;
+        width: 48%;
+        margin-right: 2%;
+    }
+    .our-services a:nth-child(2){
+        margin-right: 0;
+    }
+    .latest_post_body aside {
+        width: 100%;
+    }
+    .latest_post_body {
+        flex-wrap: wrap;
+    }
+    .latest_post_info {
+        padding-left: 0rem;
+        margin-top: 1.5rem;
+    }
+    .even_post {
+        padding-right: 2rem;
+    }
+    .even_post a {
+        margin-right: -2.5rem;
+    }
+    .latest_post_body {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .latest_post_img {
+        margin-top: 2rem;
+    }
+    .main_footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer_info_box, .footer_regi_section {
+        width: 50%;
+        margin-top: 1rem;
+    }
+    .footer_menu {
+        width: 50%;
+        margin-top: 1rem;
+    }
+}
+
+
+@media(max-width:768px){
+    .hero_text h1 {
+        font-size: 24px;
+    }
+   
+    .mobile_menu {
+        width: 60%;
+    }
+    .hero_text {
+        width: 70%;
+    }
+}
+@media(max-width:578px){
+    .mobile_menu {
+        width: 100%;
+    }
+    .our-services a {
+        width: 100%;
+        margin-right: 0;
+    }
+    .master_room_body a {
+        margin-right: 0rem;
+        width: 85%;
+    }
+    .testimonial_card {
+        width: 85%;
+        margin-top: 25px;
+        margin-right: 0;
+    }
+    .booking_btn {
+        margin-top: 12px;
+    }
+    .footer_regi_email_int {
+        padding: 7px 0px;
+        font-size: 16px;
+    }
+    .footer_regi_btn {
+        background: #000;
+        padding: 8px 16px;
+    }
+    .footer_social_icons svg {
+        font-size: 20px;
+        margin: 0px 8px;
+    }
+    
 }
