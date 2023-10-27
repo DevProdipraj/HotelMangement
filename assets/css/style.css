@@ -149,7 +149,6 @@ nav{
     display: flex;
     align-items: center;
     padding: 3rem 0rem;
-    flex-wrap: wrap;
 }
 .our-services a{
     margin-right: 2rem;
@@ -664,6 +663,9 @@ nav{
     .master_room_header {
         padding-bottom: 3.5rem;
         text-align: center;
+    }
+    .our-services{
+        flex-wrap: wrap;
     }
     .our-services a {
         margin-right: 0rem;
